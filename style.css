@@ -1,0 +1,769 @@
+:root {
+    --white: #fff;
+    --secondary-white: hsl(0deg 0% 100% / 53%);
+    --purple: hsl(300, 43%, 22%);
+    --secondary-purple: hsl(303, 10%, 53%);
+    --primary-purple: hsl(300, 24%, 96%);
+    --pink: hsl(333, 80%, 67%);
+}
+
+body {
+    background-image: url("images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Spartan', sans-serif;
+}
+
+
+/* ***************VARIABLES************* */
+.main {
+    background-color: var(--secondary-white);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.box-1 > header > p {
+    color: var(--purple);
+}
+.box-1 > .paragraph {
+    color: var(--secondary-purple);
+}
+.box-2 > .rate {
+    background-color: var(--primary-purple);
+}
+.detail > span {
+    color: var(--purple);
+}
+.profile > .card-1, .card-2, .card-3 {
+    background-color: var(--purple);
+}
+.sec-2 {
+    color: var(--white);
+}
+.info > p:nth-child(1){
+    color: var(--white);
+}
+.info > p:nth-child(2){
+    color: var(--pink);
+}
+/* *********************************** */
+
+
+
+/* *******HOVERING ELEMENTS******* */
+.box-2 > .rate:hover {
+    transform: translateX(10px) scale(1.03);
+}
+.profile > .card-1:hover {
+    transform: translateY(-10px) scale(1.03);  
+}
+.profile > .card-2:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+.profile > .card-3:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+/* ******************************* */
+
+
+/* ***************MIN-WIDTH 1200PX*************** */
+
+@media only screen and (min-width: 1200px) {
+
+    /* *******MAIN PART****** */
+    .main {
+        width: 90%;
+        height: 680px;
+        margin: 30px auto;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        padding-right: 50px;
+        padding-left: 100px;
+        box-sizing: border-box;
+    }
+    .main > .layout {
+        width: 100%;
+        min-height: 220px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+    }
+    /* *****BOX 1***** */
+    
+    .layout > .box-1 {
+        width: 40%;
+        float: left;
+    }
+    .box-1 > header > p {
+        font-size: 2.5vw;
+        font-family: [Spartan];
+        font-weight: 400, 500, 700;
+        width: 85%;
+        margin-bottom: 10px;
+    }
+    .box-1 > .paragraph {
+        width: 75%;
+        font-size: 0.9vw;
+    }
+     /* *****BOX 2***** */
+    .layout > .box-2 {
+        float: right;
+        width: 55%;
+        margin-right: 65px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    /* *****RATE PART***** */
+    .box-2 > .rate {
+        width: 65%;
+        min-height: 50px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+        transition: transform .3s;
+    }
+
+    .box-2 > .rate:nth-child(2) {
+        align-self: center;
+    }
+    .box-2 > .rate:nth-child(3) {
+        align-self: flex-end;
+    }
+    .rate > .detail {
+        width: 90%;
+        margin-top: 5px;
+        margin-left: 15px;
+        font-size: 0.8vw;
+    }
+    .detail > img {
+        width: 1.2vw;
+    }
+    .detail > span {
+        margin-left: 20px;
+        font-weight: 700;
+    }
+     /* *****PROFILE PART***** */
+    .profile {
+        margin-top: 50px;
+        height: 270px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+     /* *****CARDS PART***** */
+    .profile > .card-1, .card-2, .card-3 {
+        width: 30%;
+        height: 240px;
+        border-radius: 8px;
+        flex-direction: row;
+        padding: 40px;
+        box-sizing: border-box;
+        margin-right: 50px;
+        transition: transform .3s;
+    }
+    
+    .card-2 {
+        align-self: center;
+    }
+    .card-3 {
+        align-self: flex-end;
+    }
+
+    /* ********SECTIONS****** */
+    .sec-1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .sec-2 {
+        font-size: 0.97vw;
+        margin-top: 30px;
+    }
+    
+    .image > img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        float: left;
+    }
+    .sec-1 > .info {
+        margin-left: 20px;
+        font-size: 0.8vw;
+    }
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    .info > p {
+        margin: 0;
+    }
+    
+}
+
+/* ***************END OF MIN-WIDTH 1200PX*************** */
+
+
+/* ***************MIN-WIDTH 992PX*************** */
+@media (min-width: 992px) and (max-width: 1200px) {
+    /* *******MAIN PART****** */
+    .main {
+        width: 90%;
+        height: 680px;
+        margin: 30px auto;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        padding-right: 50px;
+        padding-left: 100px;
+        box-sizing: border-box;
+    }
+    .main > .layout {
+        width: 100%;
+        min-height: 220px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+    }
+    /* *****BOX 1***** */
+    .layout > .box-1 {
+        width: 40%;
+        float: left;
+    }
+    .box-1 > header > p {
+        font-size: 2.5vw;
+        font-family: [Spartan];
+        font-weight: 400, 500, 700;
+        width: 85%;
+        margin-bottom: 10px;
+    }
+    .box-1 > .paragraph {
+        width: 75%;
+        font-size: 0.9vw;
+    }
+
+    /* *****BOX 2***** */
+    .layout > .box-2 {
+        float: right;
+        width: 55%;
+        margin-right: 65px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    /* *****RATE PART***** */
+    .box-2 > .rate {
+        width: 65%;
+        min-height: 50px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+        transition: transform .3s;
+    }
+    
+    .box-2 > .rate:nth-child(2) {
+        align-self: center;
+    }
+    .box-2 > .rate:nth-child(3) {
+        align-self: flex-end;
+    }
+    .rate > .detail {
+        width: 90%;
+        margin-top: 5px;
+        margin-left: 15px;
+        font-size: 0.8vw;
+    }
+    .detail > img {
+        width: 1.2vw;
+    }
+    .detail > span {
+        margin-left: 15px;
+        font-weight: 700;
+    }
+
+    /* *****PROFILE PART***** */
+    .profile {
+        margin-top: 50px;
+        height: 270px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* *****CARDS PART***** */
+    .profile > .card-1, .card-2, .card-3 {
+        width: 30%;
+        height: 230px;
+        border-radius: 8px;
+        flex-direction: row;
+        padding: 35px;
+        box-sizing: border-box;
+        margin-right: 50px;
+        transition: transform .3s;
+    }
+    .card-2 {
+        align-self: center;
+    }
+    .card-3 {
+        align-self: flex-end;
+    }
+
+    /* ********SECTIONS****** */
+    .sec-1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .sec-2 {
+        font-size: 0.97vw;
+        margin-top: 20px;
+    }
+    .image {
+        margin-right: 15px;
+    }
+    
+    .image > img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        float: left;
+    }
+    .sec-1 > .info {
+        font-size: 0.8vw;
+    }
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    .info > p {
+        margin: 0;
+    }
+    
+}
+/* ***************END OF MIN-WIDTH 992PX*************** */
+
+/* ***************MIN-WIDTH 768PX*************** */
+@media (min-width: 768px) and (max-width: 992px) {
+    /* *******MAIN PART****** */
+    .main {
+        width: 90%;
+        height: 680px;
+        margin: 30px auto;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        padding-right: 15px;
+        padding-left: 64px;
+        box-sizing: border-box;
+    }
+    .main > .layout {
+        width: 100%;
+        min-height: 220px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* *****BOX 1***** */
+    .layout > .box-1 {
+        width: 40%;
+        float: left;
+    }
+    .box-1 > header > p {
+        font-size: 2.5vw;
+        font-family: [Spartan];
+        font-weight: 400, 500, 700;
+        width: 85%;
+        margin-bottom: 10px;
+    }
+    .box-1 > .paragraph {
+        width: 75%;
+        font-size: 1.3vw;
+    }
+
+    /* *****BOX 2***** */
+    .layout > .box-2 {
+        float: right;
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        padding-right: 45px;
+    }
+
+    /* *****RATE PART***** */
+    .box-2 > .rate {
+        width: 65%;
+        min-height: 50px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+        transition: transform .3s;
+    }
+    
+    .box-2 > .rate:nth-child(2) {
+        align-self: center;
+    }
+    .box-2 > .rate:nth-child(3) {
+        align-self: flex-end;
+    }
+    .rate > .detail {
+        width: 90%;
+        margin-top: 10px;
+        margin-left: 15px;
+        font-size: 0.8vw;
+    }
+    .detail > img {
+        width: 1.2vw;
+    }
+    .detail > span {
+        margin-left: 15px;
+        font-weight: 700;
+    }
+
+    /* *****PROFILE PART***** */
+    .profile {
+        margin-top: 50px;
+        height: 270px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+     /* *****CARDS PART***** */
+    .profile > .card-1, .card-2, .card-3 {
+        width: 30%;
+        height: 180px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-right: 50px;
+        transition: transform .3s;
+    }
+    .card-2 {
+        align-self: center;
+    }
+    .card-3 {
+        align-self: flex-end;
+    }
+
+    /* ********SECTIONS****** */
+    .sec-1 {
+        display: flex;
+    }
+    .sec-2 {
+        font-size: 0.97vw;
+        margin-top: 10px;
+        text-align: left;
+    }
+    .image {
+        margin-right: 15px; 
+    }
+    .image > img {
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+    }
+    .sec-1 > .info {
+        font-size: 0.8vw;
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        align-items: left;
+    }
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    .info > p {
+        margin: 0;
+    }
+    
+}
+/* ***************END OF MIN-WIDTH 768PX*************** */
+
+/* ***************MIN-WIDTH 600PX*************** */
+@media (min-width: 600px) and (max-width: 768px) {
+    /* *******MAIN PART****** */
+    .main {
+        width: 90%;
+        margin: 30px auto;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        padding-right: 60px;
+        padding-left: 60px;
+        box-sizing: border-box;
+    }
+    .main > .layout {
+        width: 100%;
+        min-height: 220px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* *****BOX 1***** */
+    .layout > .box-1 {
+        width: 100%;
+        text-align: center;
+    }
+    .box-1 > header > p {
+        font-size: 2.5vw;
+        font-family: [Spartan];
+        font-weight: 400, 500, 700;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .box-1 > .paragraph {
+        width: 65%;
+        font-size: 1.3vw;
+        margin: 0 auto;
+    }
+
+    /* *****BOX 2***** */
+    .layout > .box-2 {
+        float: right;
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* *****RATE PART***** */
+    .box-2 > .rate {
+        width: 70%;
+        min-height: 50px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+        transition: transform .3s;
+        text-align: center;
+    }
+    
+    .rate > .detail {
+        width: 90%;
+        margin-top: 10px;
+        margin-left: 15px;
+        font-size: 1.5vw;
+        padding-left: 10px;
+    }
+    .detail > img {
+        width: 1.9vw;
+    }
+    .detail > span {
+        margin-left: 15px;
+        font-weight: 700;
+    }
+
+    /* *****PROFILE PART***** */
+    .profile {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* *****CARDS PART***** */
+    .profile > .card-1, .card-2, .card-3 {
+        width: 50%;
+        height: 180px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        transition: transform .3s;
+    }
+
+    /* ********SECTIONS****** */
+    .sec-1 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .sec-2 {
+        color: #fff;
+        font-size: 1.4vw;
+        margin-top: 10px;
+        text-align: left;
+    }
+    .image {
+        display: flex;
+        justify-content: center;
+        margin-right: 20px;
+    }
+    .image > img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+    .sec-1 > .info {
+        font-size: 1vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    .info > p {
+        margin: 0;
+    }
+    
+}
+/* ***************END OF MIN-WIDTH 600PX*************** */
+
+/* ***************MAX-WIDTH 600PX*************** */
+@media (max-width: 600px) {
+    /* *******MAIN PART****** */
+    .main {
+        width: 90%;
+        margin: 30px auto;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        box-sizing: border-box;
+    }
+    .main > .layout {
+        width: 100%;
+        min-height: 220px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* *****BOX 1***** */
+    .layout > .box-1 {
+        width: 80%;
+        text-align: center;
+    }
+    .box-1 > header > p {
+        font-size: 3.7vw;
+        font-family: [Spartan];
+        font-weight: 400, 500, 700;
+        font-weight: 900;
+        width: 40%;
+        margin-bottom: 10px;
+        margin: 0 auto;
+    }
+    .box-1 > .paragraph {
+        width: 70%;
+        font-size: 2.3vw;
+        margin: 0 auto;
+    }
+
+    /* *****BOX 2***** */
+    .layout > .box-2 {
+        float: right;
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* *****RATE PART***** */
+    .box-2 > .rate {
+        width: 80%;
+        min-height: 50px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+        transition: transform .3s;
+        text-align: center;
+    }
+    
+    .rate > .detail {
+        width: 90%;
+        font-size: 2.2vw;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .detail > img {
+        width: 2.5vw;
+    }
+    .detail > span {
+        margin-left: 15px;
+        display: block;
+        margin-top: 10px;
+        font-weight: 700;
+    }
+
+    /* *****PROFILE PART***** */
+    .profile {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* *****CARDS PART***** */
+    .profile > .card-1, .card-2, .card-3 {
+        width: 80%;
+        height: 220px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        transition: transform .3s;
+    }
+
+    /* ********SECTIONS****** */
+    .sec-1 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .image {
+        display: flex;
+        justify-content: center;
+        margin-right: 10px;
+    }
+    .image > img {
+        border-radius: 50%;
+        width: 6.3vw;
+        height: 6.3vw;
+    }
+    .sec-1 > .info {
+        font-size: 1.9vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sec-2 {
+        font-size: 3vw;
+        margin-top: 10px;
+        text-align: left;
+    }
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    .info > p {
+        margin: 0;
+    }
+    
+}
+/* ***************END OF MAX-WIDTH 600PX*************** */
+@media (max-width: 450px) {
+    .profile > .card-1, .card-2, .card-3 {
+        height: 37vh;
+    }
+}
