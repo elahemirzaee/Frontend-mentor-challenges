@@ -1,0 +1,198 @@
+/* *****************BODY*************** */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-position: left top , right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 600px, 600px;
+    background-origin: content-box;
+    box-sizing: border-box;
+    background-color: var(--primary-blue);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+/* *********************************** */
+
+/* ***********VARIABLES************** */
+:root {
+    --primary-grey: hsl(227, 10%, 46%);
+    --grey: hsl(0, 0%, 59%);
+    --dark-blue: hsl(229, 23%, 23%);
+    --white: white;
+    --primary-blue: hsl(185, 75%, 39%);
+}
+/* *********************************** */
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 380px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.card > .sec-1 {
+    background-image: url(images/bg-pattern-card.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.profile {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.profile > .image {
+    position: absolute;
+    left: calc(50% - 15%);
+    top: -35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image > .test {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.test p:nth-child(1) {
+    font-weight: 900;
+    font-size: 18px;
+}
+.test p:nth-child(2) {
+    font-size: 18px;
+    color: var(--primary-grey);
+    margin-left: 5px;
+}
+.test p:nth-child(3) {
+    font-size: 16px;
+    color: var(--primary-grey);
+    margin-top: 10px;
+}
+.image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 5px solid var(--white);
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid var(--grey);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-sizing: border-box;
+}
+.footer > .information {
+    padding-bottom: 25px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.information p:nth-child(1) {
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 0;
+    color: var(--dark-blue);
+}
+.information > p:nth-child(2) {
+    margin: 0;
+    font-size: 12px;
+    color: var(--primary-grey);
+}
+
+
+/* *************MAX-WIDTH: 510PX********** */
+
+@media (max-width: 510px) {
+    body {
+        background-size: 200px, 200px;
+    }
+    .card {
+        width: 80%;
+        height: 400px;
+    }
+    .card > .sec-1 {
+        width: 100%;
+        height: 150px;
+    }
+    .profile {
+        width: 100%;
+        height: 200px;
+    }
+    .image > .test {
+        width: 100%;
+    }
+    .test p:nth-child(1) {
+        font-size: 16px;
+    }
+    .test p:nth-child(2) {
+        font-size: 16px;
+    }
+    .test p:nth-child(3) {
+        font-size: 14px;
+    }
+    .image img {
+        width: 80px;
+        height: 80px;
+    }
+    .footer {
+        width: 100%;
+        height: 100px;
+    }
+    .footer > .information {
+        padding-bottom: 25px;
+    }
+    .information p:nth-child(1) {
+        font-weight: 800;
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .information > p:nth-child(2) {
+        margin-top: 3px;
+        font-size: 14px;
+    }
+}
+/* ************************************ */
+
+
+/* *************MAX-WIDTH: 300PX********** */
+@media (max-width: 300px) {
+    .profile > .image {
+        left: calc(50% - 24%);
+    }
+    .test p:nth-child(1) {
+        font-size: 14px;
+    }
+    .test p:nth-child(2) {
+        font-size: 14px;
+    }
+    .test p:nth-child(3) {
+        font-size: 12px;
+    }
+    .information p:nth-child(1) {
+        font-size: 16px;
+    }
+    .information > p:nth-child(2) {
+        font-size: 12px;
+    }
+}
+/* ********************************** */
