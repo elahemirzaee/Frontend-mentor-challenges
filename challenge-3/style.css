@@ -1,0 +1,478 @@
+
+/* ------------ROOT---------- */
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Light-Gray: hsl(0, 0%, 98%);
+    --white: #fff;
+}
+/* ------------BODY---------- */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------MAIN---------- */
+.main {
+    width: 100%;
+    background-color: var(--Light-Gray);
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* ------------CARDS---------- */
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+}
+
+.col1 > .card-1 {
+    border-top: 5px var(--Cyan) solid;
+}
+.col2 > .card-2 {
+    border-top: 5px var(--Red) solid;
+}
+.col2 > .card-3 {
+    border-top: 5px var(--Orange) solid;
+}
+.col3 > .card-4 {
+    border-top: 5px var(--Blue) solid;
+}
+
+.card-1:hover ,
+.card-2:hover ,
+.card-3:hover ,
+.card-4:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+/* ------------CARDS ELEMENT---------- */
+.supervisor,
+.team-builder,
+.karma,
+.calculator {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.supervisor > h1 ,
+.team-builder > h1,
+.karma > h1,
+.calculator > h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.supervisor > p ,
+.team-builder > p,
+.karma > p,
+.calculator > p {
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+/* ------------ICON---------- */
+.icon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* ------------MIN-WIDTH: 1200PX---------- */
+@media screen and (min-width: 1200px) {
+    /* ------------HEADER---------- */
+    .header {
+        width: 34%;
+        margin: auto;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .header > header {
+        font-size: 29px;
+    }
+    .header > header p {
+        font-size: 30px;
+        font-weight: 900;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .header > article {
+        font-size: 13px;
+    }
+
+    /* ------------CARDS---------- */
+    .cards {
+        width: 65%;
+        height: 510px;
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+    .cards > .col1 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 20px;
+    }
+    .cards > .col2 {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .cards > .col3 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 20px;
+    }
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4 {
+        width: 100%;
+        height: 220px;
+        padding: 20px;
+        transition: transform .3s;
+    }
+    /* -------------------------- */
+}
+
+/* ------------MIN-WIDTH: 992PX---------- */
+@media (min-width: 992px) and (max-width: 1200px) {
+    /* ------------HEADER---------- */
+    .header {
+        width: 42%;
+        margin: auto;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .header > header {
+        font-size: 29px;
+    }
+    .header > header p {
+        font-size: 30px;
+        font-weight: 900;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .header > article {
+        font-size: 13px;
+    }
+
+    /* ------------CARDS---------- */
+    .cards {
+        width: 75%;
+        height: 510px;
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+    .cards > .col1 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 20px;
+    }
+    .cards > .col2 {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .cards > .col3 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 20px;
+    }
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4 {
+        width: 100%;
+        height: 220px;
+        padding: 20px;
+        transition: transform .3s;
+    }
+    /* -------------------------- */
+}
+
+/* ------------MIN-WIDTH: 768PX---------- */
+@media (min-width: 768px) and (max-width: 992px) {
+    /* ------------HEADER---------- */
+    .header {
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .header > header {
+        font-size: 29px;
+    }
+    .header > header p {
+        font-size: 30px;
+        font-weight: 900;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .header > article {
+        font-size: 13px;
+    }
+
+    /* ------------CARDS---------- */
+    .cards {
+        width: 100%;
+        height: 510px;
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+    .cards > .col1 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 20px;
+    }
+    .cards > .col2 {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .cards > .col3 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 20px;
+    }
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4 {
+        width: 100%;
+        height: 220px;
+        padding: 20px;
+        transition: transform .3s;
+    }
+    /* -------------------------- */
+}
+
+/* ------------MIN-WIDTH: 600PX---------- */
+@media (min-width: 600px) and (max-width: 768px) {
+    /* ------------HEADER---------- */
+    .header {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .header > header {
+        font-size: 29px;
+    }
+    .header > header p {
+        font-size: 30px;
+        font-weight: 900;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .header > article {
+        font-size: 13px;
+    }
+
+    /* ------------CARDS---------- */
+    .cards {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        margin: 40px auto;
+    }
+    .col1, .col2, .col3 {
+        margin: 0 auto;
+        height: 100%;
+        width: 80%;
+    }
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4 {
+        width: 100%;
+        height: 220px;
+        padding: 20px;
+        transition: transform .3s;
+        margin-bottom: 30px;
+    }
+    /* -------------------------- */
+}
+
+/* ------------MIN-WIDTH: 400PX---------- */
+@media (min-width: 400px) and (max-width: 600px) {
+    /* ------------HEADER---------- */
+    .header {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .header > header {
+        font-size: 20px;
+    }
+    .header > header p {
+        font-size: 20px;
+        font-weight: 900;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .header > article {
+        font-size: 12px;
+    }
+    /* ------------CARDS---------- */
+    .cards {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        margin: 40px auto;
+    }
+    .col1, .col2, .col3 {
+        margin: 0 auto;
+        height: 100%;
+        width: 80%;
+    }
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4 {
+        width: 100%;
+        height: 220px;
+        padding: 20px;
+        transition: transform .3s;
+        margin-bottom: 30px;
+    }
+
+    /* -----------CARDS ELEMENT----------- */
+    .supervisor > h1 ,
+    .team-builder > h1,
+    .karma > h1,
+    .calculator > h1 {
+        font-size: 19px;
+    }
+    .supervisor > p ,
+    .team-builder > p,
+    .karma > p,
+    .calculator > p {
+        font-size: 10px;
+    }
+
+    /* --------------ICON------------ */
+    .icon {
+        margin-top: 20px;
+    }
+}
+
+/* ------------MIN-WIDTH: 992PX---------- */
+@media (max-width: 400px) {
+    /* ------------HEADER---------- */
+    .header {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .header > header {
+        font-size: 20px;
+    }
+    .header > header p {
+        font-size: 20px;
+        font-weight: 900;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .header > article {
+        font-size: 10px;
+    }
+    /* ------------CARDS---------- */
+    .cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        margin: 40px auto;
+    }
+    .col1, .col2, .col3 {
+        margin: 0 auto;
+        min-height: 100%;
+        width: 80%;
+    }
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4 {
+        width: 100%;
+        height: 220px;
+        padding: 20px;
+        transition: transform .3s;
+        margin-bottom: 30px;
+    }
+
+    /* -----------CARDS ELEMENT----------- */
+    .supervisor > h1 ,
+    .team-builder > h1,
+    .karma > h1,
+    .calculator > h1 {
+        font-size: 19px;
+    }
+
+    .supervisor > p ,
+    .team-builder > p,
+    .karma > p,
+    .calculator > p {
+        font-size: 10px;
+    }
+
+    /* -----------ICON----------- */
+    .icon {
+        margin-top: 15px;
+    }
+}
