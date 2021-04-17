@@ -1,0 +1,204 @@
+:root {
+    --dark-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+    --grayish-blue: hsl(237, 12%, 33%);
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+    --font-size: 12px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom right,hsl(273, 75%, 66%) , hsl(240, 73%, 65%));
+    height: 99vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 1200px) {
+    .main {
+        width: 70%;
+        height: 650px;
+        background-color: #fff;
+        border-radius: 30px;
+        display: flex;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .left {
+        width: 50%;
+        height: inherit;
+        border-radius: 30px;
+        background-image: url(images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: right 150px bottom -100px;
+    }
+    .left .girl {
+        background-image: url(images/illustration-woman-online-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        width: 73%;
+        height: 465px;
+        position: relative;
+    }
+    .left .girl .box{
+        background-image: url(images/illustration-box-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 160px;
+        position: absolute;
+        left: -79px;
+        bottom: 57px;
+        z-index: 100;
+        width: 163px;
+        height: 152px;
+    }
+    .right {
+        width: 50%;
+        height: inherit;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+    }
+    .container {
+        width: 100%;
+    }
+    h1 {
+        font-size: 40px;
+        font-family: 'Kumbh Sans', sans-serif;
+    }
+    .q {
+        height: 50px;
+        width: 80%;
+        background-color: #fff;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: left;
+        cursor: pointer;
+        font-family: 'Kumbh Sans', sans-serif;
+        transition: 0.4s;
+        font-size: 16px;
+        line-height: 33px;
+    }
+    button {
+        border: none;
+        border-bottom: 1px solid var(--dark-grayish-blue);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    button:focus {
+        outline: none;
+    }
+    button:hover {
+        color: var(--soft-red);
+    }
+    .a {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        width: 73%;
+        font-family: 'Kumbh Sans', sans-serif;
+        font-size: 14px;
+        color: var(--dark-grayish-blue);
+    }
+    
+    .rotated {
+        transform: rotate(180deg);
+    }
+}
+
+@media (max-width: 400px) {
+
+    .main {
+        width: 90%;
+        height: 750px;
+        background-color: #fff;
+        border-radius: 30px;
+        display: flex;
+        margin-top: 1000px;
+        margin-bottom: 100px;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    .left {
+        width: 100%;
+        height: 150px;
+        background-image: url(images/bg-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        position: relative;
+    }
+    .left .girl {
+        background-image: url(images/illustration-woman-online-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        top: -104px;
+        left: -13px;
+    }
+
+    .right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    .container {
+        width: 98%;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 30px;
+        font-family: 'Kumbh Sans', sans-serif;
+        text-align: center;
+    }
+    .q {
+        height: 50px;
+        width: 100%;
+        background-color: #fff;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: left;
+        cursor: pointer;
+        font-family: 'Kumbh Sans', sans-serif;
+        transition: 0.4s;
+        font-size: 12px;
+    }
+    button {
+        border: none;
+        border-bottom: 1px solid var(--dark-grayish-blue);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    button:focus {
+        outline: none;
+    }
+    button:hover {
+        color: var(--soft-red);
+    }
+    .a {
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        width: 100%;
+        font-family: 'Kumbh Sans', sans-serif;
+        font-size: 12px;
+        color: var(--dark-grayish-blue);
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .rotated {
+        transform: rotate(180deg);
+    }
+}
