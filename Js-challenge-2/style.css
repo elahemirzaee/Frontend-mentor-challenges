@@ -1,0 +1,198 @@
+:root {
+    --red: hsl(0, 100%, 74%) ;
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+    --white: #fff;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control input {
+    border: 1px solid var(--grayish-blue);
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+.form-control.success input {
+    border: 2px solid var(--green);
+}
+.form-control.error input {
+    border: 2px solid var(--red);
+}
+.form-control.error img {
+    visibility: visible;
+}
+.form-control.error span {
+    visibility: visible;
+}
+input:focus {
+    outline: none;
+    border: 2px solid var(--dark-blue);
+}
+.form-control img {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    visibility: hidden;
+}
+.form-control span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 10px;
+    color: var(--red);
+    visibility: hidden;
+}
+.form .btn {
+    display: flex;
+    justify-content: space-between;
+}
+.btn > button {
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    transition: all .2s ease-in-out;
+    /* box-shadow: 0px 0px 8px 2px #000000; */
+}
+.btn > .btn-1 {
+    width: 100%;
+    background-color: var(--blue);
+    color: var(--white);
+    height: 55px;
+}
+.btn > .btn-2 {
+    width: 100%;
+    background-color: var(--green);
+    color: var(--white);
+    height: 55px;
+    border-bottom: 5px solid hsl(154, 52%, 43%);
+    text-transform: uppercase;
+}
+.btn-2:hover {
+    background-color: hsl(154, 59%, 51%, 70%);
+}
+.btn > button:active {
+    transform: translateY(1px);
+}
+.btn > button:focus {
+    outline: none;
+}
+.btn-1 > span {
+    font-weight: 600;
+}
+.form p {
+    text-align: center;
+    font-size: 12px;
+    color: var(--grayish-blue);
+}
+.form p > a {
+    color: var(--red);
+    text-decoration: none;
+}
+@media (min-width: 768px) {
+    .main {
+        background-image: url(images/bg-intro-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--red);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header {
+        width: 40%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: var(--white);
+    }
+    header h1 {
+        width: 70%;
+        font-size: 50px;
+    }
+    header p {
+        width: 84%;
+    }
+    form {
+        background-color: var(--white);
+        padding: 40px 50px 10px 50px;
+        height: 530px;
+        border-radius: 10px;
+    }
+    .form {
+        width: 40%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        background-image: url(images/bg-intro-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        /* height: 100vh; */
+        background-color: var(--red);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    header {
+        width: 90%;
+        /* height: 600px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: var(--white);
+        align-items: center;
+        text-align: center;
+    }
+    header h1 {
+        width: 70%;
+        font-size: 50px;
+    }
+    header p {
+        width: 80%;
+    }
+    form {
+        background-color: var(--white);
+        padding: 40px 50px 10px 50px;
+        height: 500px;
+        border-radius: 10px;
+    }
+    .form {
+        width: 80%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .form-control {
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+        position: relative;
+    }
+    
+}
