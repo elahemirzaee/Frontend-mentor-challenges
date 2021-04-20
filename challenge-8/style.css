@@ -71,7 +71,7 @@ header .btn {
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
     /* ------------------LOGO----------------- */
 .logo {
     width: 100%;
@@ -178,7 +178,7 @@ header > p {
     width: 100%;
     background-image: url(images/bg-section-top-desktop-1.svg);
     background-position: top 10px center;
-    background-size: contain;
+    background-size: 1484px;
     background-repeat: no-repeat;
     height: 177px;
 }
@@ -206,7 +206,7 @@ header > p {
     width: 30%;
 }
 .img img {
-    width: 400px;
+    width: 370px;
     height: 360px;
 }
 
@@ -214,7 +214,7 @@ header > p {
     width: 100%;
     background-image: url(images/bg-section-bottom-desktop-1.svg);
     background-position: bottom 10px center;
-    background-size: contain;
+    background-size: 1484px;
     background-repeat: no-repeat;
     height: 147px;
     margin-bottom: 50px;
@@ -254,7 +254,7 @@ header > p {
     width: 100%;
     background-image: url(images/bg-footer-top-desktop.svg);
     background-position: top 20px center;
-    background-size: contain;
+    background-size: 1484px;
     background-repeat: no-repeat;
     height: 177px;
 }
@@ -357,6 +357,7 @@ form > input[type="email"] {
     border: none;
     padding: 20px;
     box-sizing: border-box;
+    margin-right: 20px;
 }
 form > input[type="email"]:focus {
    outline: none;
@@ -368,7 +369,354 @@ form > input[type="email"]:focus {
 
 
 
-@media (max-width: 400px) {
+
+
+
+
+
+
+
+
+@media (min-width: 500px) and (max-width: 992px) {
+    .main{
+        padding: 20px 20px 0 20px;
+    }
+    /* ------------------LOGO----------------- */
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+   width: 200px;
+}
+.btn > .btn-1 {
+    width: 89px;
+    height: 25px;
+    font-size: 11px;
+}
+.btn > .btn-2 {
+    width: 215px;
+    height: 40px;
+    font-size: 13px;
+}
+
+
+/* ------------------HEADER----------------- */
+header {
+    width: 60%;
+    height: 200px;
+    margin: 70px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 11px;
+}
+header > h1 {
+    font-family: var(--font-poppins);
+}
+header > p {
+    font-family: var(--font-open);
+}
+/* ------------------END OF HEADER----------------- */
+
+/* ------------------MOCKUP----------------- */
+.mockup {
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+.mockup > img {
+    height: 55vw;
+}
+/* ------------------END OF MOCKUP----------------- */
+
+/* ------------------Community----------------- */
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    height: 487px;
+}
+.info > .community {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.community > h1 , p{
+    margin: 0;
+}
+.community img {
+    width: 30px;
+    height: 30px;
+}
+.community h1 {
+    font-size: 55px;
+    font-weight: 600;
+    font-family: var(--font-open);
+}
+.community p {
+    font-weight: 400;
+    font-family: var(--font-open);
+    color: var(--gray);
+    font-size: 13px;
+}
+
+.info > .message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.message > h1 , p{
+    margin: 0;
+}
+.message img {
+    width: 30px;
+    height: 30px;
+}
+.message h1 {
+    font-weight: 600;
+    font-family: var(--font-open);
+    font-size: 53px;
+}
+.message p {
+    font-weight: 400;
+    font-family: var(--font-open);
+    color: var(--gray);
+    text-align: center;
+    width: 152px;
+    font-size: 13px;
+}
+/* ------------------END OF Community----------------- */
+
+
+/* ------------------GROW----------------- */
+.top {
+    width: 100%;
+    background-image: url(images/bg-section-top-mobile-1.svg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 235px;
+}
+
+.curved {
+    width: 100%;
+    background-color: var(--pale-blue);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column-reverse;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.text {
+    width: 55%;
+    height: 178px;
+    text-align: center;
+    margin-top: 20px;
+}
+.text > h1 {
+    font-family: var(--font-poppins);
+    font-size: 22px;
+}
+.text > p {
+    font-family: var(--font-open);
+    font-size: 13px;
+}
+
+.img img {
+    width: 44vw;
+}
+
+.bottom {
+    width: 100%;
+    background-image: url(images/bg-section-bottom-mobile-1.svg);
+    background-position: bottom 2px center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 104px;
+    margin-bottom: 50px;
+}
+/* ------------------END OF GROW----------------- */
+
+/* ------------------CONVERSATION----------------- */
+.conversation {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px 20px 0 20px;
+}
+
+/* ------------------END OF CONVERSATION----------------- */
+
+/* ---------------QUESTION---------------- */
+.question {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.question > .inner {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-poppins);
+    text-align: center;
+}
+.inner > h1 {
+    font-size: 22px;
+}
+/* ------------------END OF QUESTION----------------- */
+
+/* ---------------FOOTER---------------- */
+.dark-curve {
+    width: 100%;
+    background-image: url(images/bg-footer-top-mobile.svg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 145px;
+}
+footer {
+    width: 100%;
+    /* height: 350px; */
+    background-color: var(--dark-cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer > .footer {
+    width: 90%;
+    display: flex;
+    justify-content: start;
+    margin: 0 auto;
+    flex-direction: column-reverse;
+    height: 580px;
+}
+.about {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--white);
+    font-family: var(--font-open);
+}
+.about > .image-2 > img {
+    filter: brightness(0) invert(1);
+}
+.about > p {
+    margin-top: 10px;
+}
+.about > .phone {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.about > .phone img{
+    margin-right: 10px;
+}
+.about > .email {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+.about > .email img{
+    margin-right: 10px;
+}
+.social-media {
+    width: 100%;
+    margin-top: 20px;
+
+}
+.social-media a {
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--white);
+    margin: 5px;
+}
+.social-media a:nth-child(1):hover{
+    color: #4064AD;
+}
+.social-media a:nth-child(2):hover{
+    color: #2C6A93;
+}
+.social-media a:nth-child(3):hover{
+    color: #1dcaff;
+}
+
+/* ---------------FORM PART---------------- */
+.form {
+    width: 60%;
+    height: 346px;
+    color: var(--white);
+}
+.form > .form-text {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.form > .form-text > h1 {
+    font-family: var(--font-open);
+    font-weight: 900;
+    margin-top: 0;
+    font-size: 25px;
+}
+.form > .form-text > p {
+    font-family: var(--font-open);
+    font-size: 14px;
+}
+
+form {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+form > input[type="email"] {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding: 20px;
+    box-sizing: border-box;
+}
+form > input[type="email"]:focus {
+   outline: none;
+   border: 2px solid var(--pink);
+}
+/* ---------------END OF FORM PART---------------- */
+/* ------------------END OF FOOTER----------------- */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
     .main{
         padding: 20px;
     }
@@ -492,10 +840,10 @@ header > p {
 .top {
     width: 100%;
     background-image: url(images/bg-section-top-mobile-1.svg);
-    background-position: top 10px center;
-    background-size: contain;
+    background-position: top 0px center;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 100px;
+    height: 137px;
 }
 
 .curved {
@@ -532,9 +880,9 @@ header > p {
     width: 100%;
     background-image: url(images/bg-section-bottom-mobile-1.svg);
     background-position: bottom 10px center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 53px;
+    height: 66px;
     margin-bottom: 50px;
 }
 /* ------------------END OF GROW----------------- */
@@ -547,7 +895,7 @@ header > p {
     align-items: center;
     flex-direction: column;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
 }
 
 /* ------------------END OF CONVERSATION----------------- */
@@ -577,8 +925,8 @@ header > p {
 .dark-curve {
     width: 100%;
     background-image: url(images/bg-footer-top-mobile.svg);
-    background-position: top 20px center;
-    background-size: contain;
+    background-position: top center;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 64px;
 }
@@ -596,7 +944,7 @@ footer > .footer {
     justify-content: start;
     margin: 0 auto;
     flex-direction: column-reverse;
-    height: 700px;
+    height: 620px;
 }
 .about {
     width: 100%;
