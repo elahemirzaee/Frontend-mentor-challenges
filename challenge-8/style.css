@@ -178,7 +178,7 @@ header > p {
     width: 100%;
     background-image: url(images/bg-section-top-desktop-1.svg);
     background-position: top 10px center;
-    background-size: 1484px;
+    background-size: 1520px;
     background-repeat: no-repeat;
     height: 177px;
 }
@@ -214,7 +214,7 @@ header > p {
     width: 100%;
     background-image: url(images/bg-section-bottom-desktop-1.svg);
     background-position: bottom 10px center;
-    background-size: 1484px;
+    background-size: 1520px;
     background-repeat: no-repeat;
     height: 147px;
     margin-bottom: 50px;
@@ -254,7 +254,7 @@ header > p {
     width: 100%;
     background-image: url(images/bg-footer-top-desktop.svg);
     background-position: top 20px center;
-    background-size: 1484px;
+    background-size: 1520px;
     background-repeat: no-repeat;
     height: 177px;
 }
