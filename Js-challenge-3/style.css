@@ -21,7 +21,11 @@ body {
     padding: 0;
 }
 
-
+@media (min-width: 768px) {
+    .links {
+        display: flex !important;
+    }
+}
 /* -----------------MENU TOGGLE-------------- */
 
 #toggle {
@@ -348,6 +352,9 @@ a {
     
     .show {
         display: block;
+    }
+    .rotated {
+        transform: rotate(180deg);
     }
     /* -----------------END OF MENU---------------------- */
 
@@ -732,6 +739,9 @@ a {
     
     .show {
         display: block;
+    }
+    .rotated {
+        transform: rotate(180deg);
     }
     /* -----------------END OF MENU----------------- */
 
@@ -1120,6 +1130,9 @@ a {
     .show {
         display: block;
     }
+    .rotated {
+        transform: rotate(180deg);
+    }
     /* -----------------END OF MENU----------------- */
 
     /* -------------------FIRRST LAYOUT----------------- */
@@ -1318,7 +1331,7 @@ a {
         /* height: 597px; */
         background-image: url(images/bg-pattern-intro.svg);
         background-position: right -622px top -469px;
-        background-size: 1406px;
+        background-size: 1362px;
         background-repeat: no-repeat;
     }
     .slogan {
@@ -2072,6 +2085,3 @@ a {
 
 
 
-.rotated {
-    transform: rotate(180deg);
-}

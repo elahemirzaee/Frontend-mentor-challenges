@@ -3,28 +3,28 @@
 const toggle = document.getElementById('toggle');
 const menu = document.getElementsByClassName('item');
 var links = document.getElementById("links");
-var mq = window.matchMedia( "(max-width: 768px)" );
-// links.style.display = 'none';
-
+const background = document.querySelector('nav');
+background.style.backgroundColor = 'transparent';
 
 // TOGGLE MENU ICON
 function toggleIcon() {
   toggle.classList.toggle('active');
   // menu.style.display = 'block'; 
-}
-toggle.addEventListener('click', toggleIcon);
-
-
-function myFunction() {
   var x = document.getElementById("links");
-  if(mq.matches) {
     if(x.style.display === "flex") {
       x.style.display = "none";
     } else {
       x.style.display = "flex";
     }
-  }
+    background.style.backgroundColor = 'black';
+    // if(background.style.backgroundColor == 'black') {
+    //   background.style.backgroundColor = 'transparent';
+    // }
 }
+toggle.addEventListener('click', toggleIcon);
+
+
+
 /////////////////////////////////////////////
 
 
