@@ -243,6 +243,7 @@ button:hover a {
   }
 
   .pic {
+    background-size: cover;
     background-repeat: no-repeat;
     height: 450px;
     width: 19vw;
@@ -566,7 +567,7 @@ button:hover a {
 
   /* -----------------CREATION PART-------------------- */
   .creation {
-    width: 80%;
+    width: 77%;
     height: 100px;
     /* background-color: rgb(124, 72, 124); */
     display: flex;
@@ -587,21 +588,23 @@ button:hover a {
 
   /* -----------------GALLERY PART-------------------- */
   .gallery {
-    width: 80%;
-    height: 945px;
+    width: 81%;
+    /* height: 945px; */
     /* background-color: yellow; */
     margin: 50px auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    /* align-items: initial; */
     flex-wrap: wrap;
   }
 
   .pic {
     background-repeat: no-repeat;
     height: 450px;
-    width: 19vw;
+    width: 24vw;
     position: relative;
+    margin: 10px;
+    background-size: cover;
   }
   .back-hover {
     background-color: var(--white);
@@ -921,7 +924,7 @@ button:hover a {
 
   /* -----------------CREATION PART-------------------- */
   .creation {
-    width: 80%;
+    width: 79%;
     height: 100px;
     /* background-color: rgb(124, 72, 124); */
     display: flex;
@@ -942,22 +945,23 @@ button:hover a {
 
   /* -----------------GALLERY PART-------------------- */
   .gallery {
-    width: 80%;
+    width: 81%;
     /* height: 945px; */
     /* background-color: yellow; */
     margin: 50px auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    /* align-items: initial; */
     flex-wrap: wrap;
   }
 
   .pic {
     background-repeat: no-repeat;
     height: 450px;
-    width: 19vw;
+    width: 37vw;
     position: relative;
-    margin-bottom: 10px;
+    margin: 10px;
+    background-size: cover;
   }
   .back-hover {
     background-color: var(--white);
@@ -1857,7 +1861,7 @@ button:hover a {
       bottom: 0;
     }
     .sec-2 ul li a:hover::after{
-      left: 18px;
+      left: 7px;
     }
     .sec-2 p {
       color: var(--dark-gray);
